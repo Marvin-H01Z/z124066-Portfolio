@@ -1,4 +1,5 @@
-/* General CSS */
+
+/*General CSS*/
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -83,27 +84,8 @@ footer {
     bottom: 0;
 }
 
-/* Common Styles for Gallery */
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 1rem;
-}
+/*CSS Styles for Project-Page*/
 
-.gallery img {
-    width: 30%;
-    height: auto;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
-.gallery img:hover {
-    transform: scale(1.05);
-}
-
-/* CSS Styles for Project Page */
 .projects {
     padding: 2rem;
 }
@@ -121,7 +103,27 @@ footer {
     margin-top: 0;
 }
 
-/* CSS Styles for CV Page */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.gallery img {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+/*CSS Styles for CV-Page*/
+
 .cv {
     padding: 2rem;
 }
@@ -159,7 +161,8 @@ footer {
     margin-top: 0;
 }
 
-/* CSS Styles for Hobbies Page */
+/* CSS Styles for Hobbies-Page */
+
 .hobbies {
     padding: 2rem;
 }
@@ -182,6 +185,25 @@ footer {
     height: auto;
     margin-top: 1rem;
     border-radius: 8px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.gallery img {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
 }
 
 video {
@@ -209,3 +231,4 @@ video {
     background-color: #555;
     transform: scale(1.05);
 }
+
