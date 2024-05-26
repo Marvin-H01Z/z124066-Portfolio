@@ -7,6 +7,10 @@ body {
     color: #333;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     background-color: #333;
     color: white;
@@ -159,6 +163,54 @@ footer {
     margin-top: 0;
 }
 
+/* Neue Styles für die Anordnung der Skills und des Bildes nebeneinander */
+.skills-and-picture {
+    display: flex;
+    align-items: flex-start; /* sorgt dafür, dass sie auf derselben Höhe sind */
+    flex-wrap: wrap; /* ermöglicht Umbruch bei zu wenig Platz */
+}
+
+.cv-section {
+    flex: 1; /* gibt dem Skills-Abschnitt etwas Flexibilität in der Größe */
+    margin-left: 20px; /* fügt Abstand zwischen den Elementen hinzu */
+}
+
+.CVprofile-picture-container {
+    flex: 0 0 auto; /* verhindert, dass das Bild skaliert wird */
+    margin-bottom: 20px; /* fügt unteren Abstand hinzu, wenn es umbricht */
+}
+
+.CVprofile-picture {
+    max-width: 350px; /* maximale Breite des Bildes */
+    width: 100%; /* sorgt dafür, dass das Bild die volle Breite des Containers einnimmt */
+    height: auto;
+}
+
+/* Media Query für kleinere Bildschirme */
+@media (max-width: 768px) {
+    .skills-and-picture {
+        flex-direction: column; /* Anordnung untereinander auf kleinen Bildschirmen */
+        align-items: center; /* zentriert die Inhalte */
+    }
+    
+    .cv-section {
+        margin-right: 0; /* entfernt rechten Abstand auf kleinen Bildschirmen */
+        margin-bottom: 20px; /* fügt unteren Abstand hinzu */
+    }
+    
+    .CVprofile-picture-container {
+        margin-bottom: 0; /* entfernt unteren Abstand, wenn untereinander angeordnet */
+        display: flex;
+        justify-content: center; /* zentriert das Bild innerhalb des Containers */
+        width: 100%; /* sorgt dafür, dass der Container die volle Breite einnimmt */
+    }
+
+    .CVprofile-picture {
+        max-width: 200px; /* stellt sicher, dass das Bild nicht zu groß wird */
+        width: auto; /* verhindert, dass das Bild die volle Breite des Containers einnimmt */
+    }
+}
+
 /* CSS Styles for Hobbies Page */
 .hobbies {
     padding: 2rem;
@@ -195,6 +247,7 @@ video {
 .back-button {
     display: inline-block;
     margin: 2rem auto;
+    margin-left: 2rem;
     padding: 1rem 2rem;
     background-color: #333;
     color: white;
@@ -209,3 +262,4 @@ video {
     background-color: #555;
     transform: scale(1.05);
 }
+
