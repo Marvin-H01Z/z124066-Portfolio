@@ -137,10 +137,12 @@ footer {
     margin-bottom: 2rem;
     padding: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-style: normal;
 }
 
 .cv-section h2 {
     margin-top: 0;
+    
 }
 
 .cv-section ul {
@@ -155,12 +157,16 @@ footer {
     border-radius: 4px;
 }
 
-.experience-item, .education-item {
+.experience-item, .education-item, .achievements-item {
     margin-bottom: 1.5rem;
+    font-style: normal;
+    margin-right: 15%;
 }
 
-.experience-item h3, .education-item h3 {
+.experience-item h3, .education-item h3, .achievements-item {
     margin-top: 0;
+    font-size: large;
+    font-style: normal;
 }
 
 /* Neue Styles für die Anordnung der Skills und des Bildes nebeneinander */
