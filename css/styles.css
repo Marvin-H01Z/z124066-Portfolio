@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    text-align: justify;        /*Text in blocksatz*/
 }
 
 html {
@@ -96,15 +97,30 @@ footer {
 }
 
 .gallery img {
-    width: 30%;
-    height: auto;
+    width: 32%;
+    height: auto; /* Keep the natural height of the image */
+    aspect-ratio: 3 / 2; /* Set a desired aspect ratio */
+    object-fit: cover; /* Ensure images are not distorted and fill the container */
     border-radius: 8px;
-    cursor: pointer;
-    transition: transform 0.2s;
 }
 
-.gallery img:hover {
-    transform: scale(1.05);
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .gallery img {
+        width: 48%; /* Adjust width for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center; /* Center align images for better appearance */
+    }
+    
+    .gallery img {
+        width: 100%; /* Full width for small screens */
+        margin-bottom: 1rem; /* Add some spacing between images */
+    }
 }
 
 /* CSS Styles for Project Page */
